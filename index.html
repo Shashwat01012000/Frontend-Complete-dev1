@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WebandMobileApp</title>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+         
+        <div class="navbar">
+            <div class="container" id="nav">
+                <a class="logo" href="index.html">Remember<span id="icon">That</span></a>
+                
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Menue-img">
+
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Navigation-close">
+
+                    <ul class="primary-nav">
+                        <li class="current"><a class="a-color" href="#">Home</a></li>
+                        <li><a  class="a-color" href="#">Features</a></li>
+                        <li><a class="a-color" href="#">Pricing</a></li>
+                    </ul>
+
+                    <ul class="primary-nav">
+                        <li><a class="a-color" href="#">Contacts</a></li>
+                        <li class="go-premium-cta"><a class="a-color" href="#">Go Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead">It's Nitty &amp; Gritty</p>
+                    <h1 class="head-line">A Task App That Doesn't Stinks</h1>
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try for free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img class ="watch-video"src="images/watch.svg" alt="video-image">
+                            <p>Watch a Video</p>
+                        </a>
+                    </div>
+                </div>
+                <img src="images/illustration.svg" alt="hero-illustrations" class="hero-image">
+            </div>
+        </section>
+
+        <section class = "feature-section">
+            <div class="container">
+                <ul class="text-features">
+                    <li class="feature-txt">Unlimited Tasks</li>                    
+                    <li class="feature-txt">SMS Task Reminders</li>                    
+                    <li class="feature-txt">SMS Task Reminders</li>                    
+                    <li class="feature-txt">Confetti Explosions upon Task Completions</li>                    
+                    <li class="feature-txt">Confetti Explosions upon Task Completions</li>                    
+                    <li class="feature-txt">Social Media Announcements</li>                    
+                    <li class="feature-txt">Real Time Collaboration</li>                    
+                    <li class="feature-txt">Other Awsome features</li>                    
+                </ul>
+
+                <img class="man-holding-phone" src="images/holding-phone.jpg" alt="man holding Phone">
+            </div>
+        </section>
+
+        <section class="testimonials-sections">
+            <div class="container">
+                <ul>
+                    <li class="dkbg">
+                        <img class = "testimonials-img" src="images/person.jpeg" alt="person-img">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium nesciunt tempora incidunt. Aut cumque neque incidunt excepturi, repellat deleniti facere corrupti veniam quasi animi quae. Fugit odit eius et</blockquote>
+                        <cite>- Shaswat Jha</cite>
+                    </li>
+                    <li class="dkbg">
+                        <img class = "testimonials-img" src="images/person.jpeg" alt="person-img">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium nesciunt tempora incidunt. Aut cumque neque incidunt excepturi, repellat deleniti facere corrupti veniam quasi animi quae. Fugit odit eius et</blockquote>
+                        <cite>- Shaswat Jha</cite>
+                    </li>
+                    <li class="dkbg">
+                        <img class = "testimonials-img" src="images/person.jpeg" alt="person-img">
+                        <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere laudantium nesciunt tempora incidunt. Aut cumque neque incidunt excepturi, repellat deleniti facere corrupti veniam quasi animi quae. Fugit odit eius et</blockquote>
+                        <cite>- Shaswat Jha</cite>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contacts</h2>
+                    <form action="">
+                         <label for="name">Name</label>
+                         <input type="text" id="name" name="name">
+                         <label for="email">Email</label>
+                         <input type="email" id="email" name="email">
+                         <label for="message">Message</label>
+                         <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                         <input type="Submit" class="button" value="Submit">
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14015.540560294288!2d77.19271510781252!3d28.573211599999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce38c355e41cf%3A0x88458cfedf8d57e4!2sINA!5e0!3m2!1sen!2sin!4v1665346582306!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+      
+        <script>
+            
+            const MobileBtn = document.getElementById('mobile.cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+              MobileBtn.addEventListener('click' , () => {
+                   nav.classList.add('nav.menu-btn');
+              })
+
+              mobileBtnExit.addEventListener('click' , () => {
+                 nav.classList.remove('nav.menu-btn');
+              })
+
+        </script>
+         
+    </body>
+</html>
